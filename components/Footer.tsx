@@ -31,7 +31,7 @@ const Footer = () => {
       >
         {/* Copyright */}
         <Typography variant="body2" color="white">
-          Copyright © 2024 Instagram Viewer
+          Copyright © 2024 Instagram Viewer . All rights reserved.
         </Typography>
 
         {/* Links */}

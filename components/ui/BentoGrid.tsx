@@ -51,8 +51,8 @@ export const BentoGridItem = ({
 }) => {
   const [copied, setCopied] = useState(false);
 
-  // Special configurations for BentoGridItem
-  const specialConfigs = {
+  // Define the special configurations for BentoGridItem
+  const specialConfigs: Record<number, any> = {
     6: {
       showGradient: true,
       lottieOptions: {
@@ -67,7 +67,7 @@ export const BentoGridItem = ({
     5: { spareImgOpacity: "opacity-80" },
   };
 
-  const config = specialConfigs[id] || {};
+  const config = specialConfigs[id] || {}; // Use the Record type to safely access properties
 
   const handleCopy = () => {
     const text = "hsu@jsmastery.pro";

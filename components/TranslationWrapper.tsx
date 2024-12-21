@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 
-const TranslationWrapper = ({ children }) => {
+type TranslationWrapperProps = {
+    children: ReactNode;
+};
+// i have done some changes
+const TranslationWrapper: React.FC<TranslationWrapperProps> = ({ children }) => {
     const { t } = useTranslation();
 
     return (
